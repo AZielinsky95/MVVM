@@ -16,6 +16,9 @@
 		D2FF0C4A23EFA6AB0030359F /* StandardItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C4923EFA6AB0030359F /* StandardItemViewModel.swift */; };
 		D2FF0C4C23EFA6E30030359F /* StandardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C4B23EFA6E30030359F /* StandardModel.swift */; };
 		D2FF0C4E23EFA9CE0030359F /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C4D23EFA9CE0030359F /* TestTableViewController.swift */; };
+		D2FF0C5023EFAFC40030359F /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C4F23EFAFC40030359F /* TableViewModel.swift */; };
+		D2FF0C5223EFB0220030359F /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C5123EFB0220030359F /* SectionViewModel.swift */; };
+		D2FF0C5423EFB0640030359F /* StandardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF0C5323EFB0640030359F /* StandardTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D2FF0C4923EFA6AB0030359F /* StandardItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardItemViewModel.swift; sourceTree = "<group>"; };
 		D2FF0C4B23EFA6E30030359F /* StandardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardModel.swift; sourceTree = "<group>"; };
 		D2FF0C4D23EFA9CE0030359F /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		D2FF0C4F23EFAFC40030359F /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		D2FF0C5123EFB0220030359F /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		D2FF0C5323EFB0640030359F /* StandardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +68,15 @@
 		D2FF0C2F23EF8AE10030359F /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D2FF0C5523EFB09A0030359F /* Controllers */,
 				D2FF0C4823EFA6980030359F /* ViewModels */,
 				D2FF0C4523EFA6300030359F /* Models */,
 				D2FF0C4423EFA6280030359F /* Views */,
 				D2FF0C3023EF8AE10030359F /* AppDelegate.swift */,
 				D2FF0C3223EF8AE10030359F /* SceneDelegate.swift */,
-				D2FF0C3423EF8AE10030359F /* GenericTableViewController.swift */,
 				D2FF0C3923EF8AE20030359F /* Assets.xcassets */,
 				D2FF0C3B23EF8AE20030359F /* LaunchScreen.storyboard */,
 				D2FF0C3E23EF8AE20030359F /* Info.plist */,
-				D2FF0C4D23EFA9CE0030359F /* TestTableViewController.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -88,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				D2FF0C4B23EFA6E30030359F /* StandardModel.swift */,
+				D2FF0C4F23EFAFC40030359F /* TableViewModel.swift */,
+				D2FF0C5323EFB0640030359F /* StandardTableViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,9 +102,19 @@
 		D2FF0C4823EFA6980030359F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D2FF0C5123EFB0220030359F /* SectionViewModel.swift */,
 				D2FF0C4923EFA6AB0030359F /* StandardItemViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D2FF0C5523EFB09A0030359F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF0C3423EF8AE10030359F /* GenericTableViewController.swift */,
+				D2FF0C4D23EFA9CE0030359F /* TestTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +190,9 @@
 				D2FF0C4C23EFA6E30030359F /* StandardModel.swift in Sources */,
 				D2FF0C3523EF8AE10030359F /* GenericTableViewController.swift in Sources */,
 				D2FF0C3123EF8AE10030359F /* AppDelegate.swift in Sources */,
+				D2FF0C5423EFB0640030359F /* StandardTableViewModel.swift in Sources */,
+				D2FF0C5023EFAFC40030359F /* TableViewModel.swift in Sources */,
+				D2FF0C5223EFB0220030359F /* SectionViewModel.swift in Sources */,
 				D2FF0C4723EFA6690030359F /* StandardTableViewCell.swift in Sources */,
 				D2FF0C4A23EFA6AB0030359F /* StandardItemViewModel.swift in Sources */,
 				D2FF0C4E23EFA9CE0030359F /* TestTableViewController.swift in Sources */,

@@ -8,56 +8,6 @@
 
 import UIKit
 
-class StandardTableViewModel : TableViewModel {
- 
-    var data: [SectionViewModel]?
-    
-    func identifierForCells() -> [String : AnyClass] {
-        return [StandardItemViewModel.cellId : StandardTableViewCell.self]
-     }
-}
-
-protocol TableViewModel: class {
-    var data: [SectionViewModel]? { get set }
-
-    func sectionAt(_ index: Int) -> SectionViewModel?
-    func itemAt(_ indexPath: IndexPath) -> ItemViewModel?
-    func numberOfSections() -> Int
-    func hasPullToRefresh() -> Bool
-    func identifierForCells() -> [String : AnyClass]
-}
-extension TableViewModel {
-    
-    func numberOfSections() -> Int {
-        return data?.count ?? 0
-    }
-    
-    func sectionAt(_ index: Int) -> SectionViewModel? {
-        return data?[index]
-    }
-    
-    func itemAt(_ indexPath: IndexPath) -> ItemViewModel? {
-        return sectionAt(indexPath.section)?.itemAt(indexPath.row)
-    }
-    
-    func hasPullToRefresh() -> Bool {
-        return false
-    }
-}
-
-struct SectionViewModel {
-    
-    var items : [ItemViewModel]
-    
-    func numberOfRows() -> Int {
-        return items.count
-    }
-    
-    func itemAt(_ row: Int) -> ItemViewModel {
-        return items[row]
-    }
-}
-
 protocol ItemViewModel {
     func cellIdentifier() -> String
 }
